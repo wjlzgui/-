@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>工作总结</title>
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+<div style="margin:0 auto;text-align: center;">
+	<audio src="video/backgroundmusic.mp3" id="audio" controls autoplay style="display: none;"></audio> 
+</div>
+<div id="mainDiv">
+	<div id="content" style="margin-top: 10px;">
+		<div id="code" style="font-size: 13px;margin-top: 20px;">
+			<span class="comments">/*</span>
+			<span class="space"/><span class="comments">2017—07-18,</span>
+			<span class="space"/><span class="comments">2017-12-29.</span>
+			<span class="space"/><span class="comments">*/</span><br />
+			<span class="comments">1.项目方面</span><br />
+			<span class="comments">在过去的半年里.主要担负公司商城,及官网前端的开发工作,</span><br />
+			<span class="comments">页面展示.基本交互,在做这些项目的工作中,</span><br />
+			<span class="comments">不仅学习到了技术知识,还学会了很多做人的道理.不管做什么事情,</span><br />
+			<span class="comments">解决问题的唯一办法是--沟通.只要有沟通能力,</span><br />
+			<span class="comments">一切困难都能够迎刃而解.跟其他工作人员加强沟通、交流、认真细</span><br />
+			<span class="comments">心的分析需求，面对问题及时解决处理，这样才能把项目很好的向前推进。</span><br /><br />
+
+			<span class="comments">2.团队协作</span><br />
+			<span class="comments">从上面的主要工作内容来看，所有项目不是一个人所能完成的,正所谓</span><br />
+			<span class="comments">一切事务离不开团队，个人是无法逞英雄的。在公司领导的英明领导下，</span><br />
+			<span class="comments">团队建设有了很大的进步，跟同事在一起工作感觉非常开心，没有什么</span><br />
+			<span class="comments">其他的杂念，能够相互尊重，相互关心，相互帮助，这就像是一个家庭，</span><br />
+			<span class="comments">一个大家庭，平时大家开开玩笑，说说笑笑，能缓解一下紧绷的精神状态，</span><br />
+			<span class="comments">而工作中又能严于律己，认真对待工作，这就是我们需要的团队。</span><br /><br />
+
+			<span class="comments">3.工作态度</span><br />
+			<span class="comments">不管个人能力怎样，面对工作，就两个字"态度"。</span><br />
+			<span class="comments">对于领导安排的工作，有些难度比较大，困难总是要去客服的，遇到问</span><br />
+			<span class="comments">题先自己去思考去解决，解决不了的，相互问同事，同事之间相互讨论</span><br />
+			<span class="comments">共同解决问题，在工作中经常会有这样的事情，把每一次遇到的问题和</span><br />
+			<span class="comments">技术难点都记录下来，把问题、技术与大家共同分享，这样才能共同提高！</span><br /><br />
+
+			<span class="comments">4.未来工作展望</span><br />
+			<span class="comments">回首昨天，尽管太多的苦涩融进了昨日的犁铧，尽管太多的忧伤充斥着</span><br />
+			<span class="comments">我们的心灵，尽管太多的无奈写在我们的脸上，尽管太多的精力挥洒在</span><br />
+			<span class="comments">昨日的流程上。立足今日，我们擦亮双眼，走过昨日逝去的岁月，点燃</span><br />
+			<span class="comments">新的希望，放飞新的梦想。</span><br />
+			<span class="comments">一个开发人员，技术上的提高是必须的，但这是不够的 ，还得加强管理</span><br />
+			<span class="comments">方面的学习，自己将朝着这一目标迈进。学历代表过去、能力代表现在、</span><br />
+			<span class="comments">学习代表未来。</span><br />
+		</div>
+		<div id="loveHeart" style="margin-top: 50px;">
+			<canvas id="garden"></canvas>
+			<div id="words" style="text-align: center;top:377px;left:722px;">
+				<div id="messages">
+					南京久欣--我们一起走过的日子！
+					<img src="image/不一样.jpg" alt="" />
+					<!-- <div id="elapseClock"></div> -->
+				</div>
+				<div id="loveu">
+					魏彬<br/>
+					<div class="signature"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+	</div>
+</div>
+<script type="text/javascript">
+
+document.addEventListener('DOMContentLoaded', function() {
+        function audioAutoPlay() {
+            var audio = document.getElementById('audio');
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function() {
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay();
+    });
+    //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+    document.addEventListener('touchstart', function() {
+        function audioAutoPlay() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+        audioAutoPlay();
+    });
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+// together.setFullYear(2017, 7, 18);
+// together.setHours(20);
+// together.setMinutes(0);
+// together.setSeconds(0);
+// together.setMilliseconds(0);
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 100);
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
